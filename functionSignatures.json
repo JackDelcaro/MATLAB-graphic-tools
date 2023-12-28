@@ -1,0 +1,16 @@
+{
+  "zoom_plot":
+  {
+     "inputs":
+     [
+        {"name":"parent_axis",  "kind":"ordered", "type":["matlab.graphics.axis.Axes"]},
+        {"name":"rectangle_color",  "kind":"namevalue"},
+        {"name":"rectangle_linewidth",  "kind":"namevalue", "type":["numeric"]},
+        {"name":"rectangle_position",  "kind":"namevalue", "type":["numeric"]},
+        {"name":"zoom_axis_position",  "kind":"namevalue", "type":["numeric"]},
+        {"name":"absolute_rectangle_position",  "kind":"namevalue", "type":["logical"]},
+        {"name":"absolute_zoom_axis_position",  "kind":"namevalue", "type":["logical"]},
+        {"name":"mode",  "kind":"namevalue", "type":["string", "choices={'pinned_rectangle','fig_aligned_rectangle'}"]}
+     ]
+  }
+}

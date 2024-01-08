@@ -4,6 +4,7 @@
 % Matlab colors defined in a convient struct named 'colors'
 colors.matlab = hex2rgb({'#0072BD'; '#D95319'; '#EDB120'; '#7E2F8E'; '#77AC30'; '#4DBEEE'; '#A2142F'});
 colors.matlab = [colors.matlab; colors.matlab; colors.matlab];
+colors.axes = [0.15 0.15 0.15];
 colors.grey = {[1 1 1]*0.85; [1 1 1]*0.7; [1 1 1]*0.55; [1 1 1]*0.4; [1 1 1]*0.25; [1 1 1]*0.1};
 colors.white = [1 1 1];
 colors.black = [0 0 0];

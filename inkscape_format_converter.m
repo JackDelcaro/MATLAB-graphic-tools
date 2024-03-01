@@ -58,7 +58,11 @@ function inkscape_format_converter(input_file, output_dpi, output_extension)
     end
     
     % Check that input extension is supported
-    input_file = string(fullfile(which(input_file)));
+    if ~isempty(which(input_file))        
+        input_file = string(fullfile(which(input_file)));
+    else
+        input_file = string(fullfile(input_file));
+    end
     [filepath, name, ext] = fileparts(input_file);
     ext = strrep(ext, ".", "");
     allowed_input_extensions = ["svg", "pdf", "eps", "emf", "wmf"];

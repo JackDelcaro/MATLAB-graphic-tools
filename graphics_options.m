@@ -11,7 +11,7 @@ colors.black = [0 0 0];
 colors.blue = color_tints_and_shades(colors.matlab{1}, 3, 0.5);
 colors.orange = color_tints_and_shades(colors.matlab{2}, 3, 0.5);
 colors.yellow = color_tints_and_shades(colors.matlab{3}, 3, 0.5);
-colors.purple = color_tints_and_shades(colors.matlab{4}, 3, 0.5);
+colors.purple = color_tints_and_shades([0.5021    0.3122    0.6318], 3, 0.5);
 colors.green = color_tints_and_shades(colors.matlab{5}, 3, 0.5);
 colors.red = color_tints_and_shades([0.7466    0.1371    0.2981], 3, 0.5);
 

@@ -49,7 +49,7 @@ function matrix = get_subplot_disposition(fig, debug)
     % In particular, we plot the index of the subplot in the center of its axis
     if debug
         for i = 1:length(all_axes)
-            annotation('textbox', 'Position', all_axes(i).Position, 'String', num2str(i), 'HorizontalAlignment', 'center', 'VerticalAlignment', 'middle', 'EdgeColor', 'none', 'FontSize', 30, 'Color', 'g');
+            annotation('textbox', 'Position', get_absolute_position(all_axes(i)), 'String', num2str(i), 'HorizontalAlignment', 'center', 'VerticalAlignment', 'middle', 'EdgeColor', 'none', 'FontSize', 30, 'Color', 'g');
         end
     end
     
@@ -57,7 +57,7 @@ function matrix = get_subplot_disposition(fig, debug)
     % is in the form [left, bottom, right, top]
     axes_positions = nan(length(all_axes), 4);
     for i = 1:length(all_axes)
-        axes_positions(i, :) = all_axes(i).OuterPosition;
+        axes_positions(i, :) = get_absolute_outerposition(all_axes(i));
     end
     axes_positions(:, 3) = axes_positions(:, 1) + axes_positions(:, 3);
     axes_positions(:, 4) = axes_positions(:, 2) + axes_positions(:, 4);

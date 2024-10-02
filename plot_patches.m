@@ -96,10 +96,10 @@ function tiles = plot_patches(time, enable, tiles, patch_properties)
         curr_ylims = tiles(i).YLim;
         
         % Define y coordinates for patches
-        y_data(1, :) = curr_ylims(1)*ones(size(start_times))*100000;
-        y_data(2, :) = curr_ylims(1)*ones(size(start_times))*100000;
-        y_data(3, :) = curr_ylims(2)*ones(size(start_times))*100000;
-        y_data(4, :) = curr_ylims(2)*ones(size(start_times))*100000;
+        y_data(1, :) = curr_ylims(1) - abs(diff(curr_ylims))*10000;
+        y_data(2, :) = curr_ylims(1) - abs(diff(curr_ylims))*10000;
+        y_data(3, :) = curr_ylims(2) + abs(diff(curr_ylims))*10000;
+        y_data(4, :) = curr_ylims(2) + abs(diff(curr_ylims))*10000;
         
         % Draw patches
         mypatch = patch(tiles(i), 'XData', x_data, 'YData', y_data, patch_properties{:});

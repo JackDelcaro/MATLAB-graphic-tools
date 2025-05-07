@@ -311,7 +311,7 @@ function update_zoom_lines(~, event)
         set(zoom_lines(2), 'X', [vertexes.C1.x, vertexes.B2.x], 'Y', [vertexes.C1.y, vertexes.B2.y]);
     elseif (vertexes.A1.x >= vertexes.A2.x && vertexes.A1.y >= vertexes.A2.y && vertexes.D1.x >= vertexes.D2.x && vertexes.D1.y <= vertexes.D2.y) || (vertexes.A1.x >= vertexes.A2.x && vertexes.A1.y <= vertexes.A2.y && vertexes.D1.x >= vertexes.D2.x && vertexes.D1.y >= vertexes.D2.y)
         set(zoom_lines(1), 'X', [vertexes.D1.x, vertexes.C2.x], 'Y', [vertexes.D1.y, vertexes.C2.y]);
-        set(zoom_lines(2), 'X', [vertexes.A1.y, vertexes.B2.y], 'Y', [vertexes.A1.y, vertexes.B2.y]);
+        set(zoom_lines(2), 'X', [vertexes.A1.x, vertexes.B2.x], 'Y', [vertexes.A1.y, vertexes.B2.y]);
     elseif (vertexes.A1.x >= vertexes.A2.x && vertexes.A1.y >= vertexes.A2.y && vertexes.B1.x <= vertexes.B2.x && vertexes.B1.y >= vertexes.B2.y) || (vertexes.A1.x <= vertexes.A2.x && vertexes.A1.y >= vertexes.A2.y && vertexes.B1.x >= vertexes.B2.x && vertexes.B1.y >= vertexes.B2.y)
         set(zoom_lines(1), 'X', [vertexes.A1.x, vertexes.D2.x], 'Y', [vertexes.A1.y, vertexes.D2.y]);
         set(zoom_lines(2), 'X', [vertexes.B1.x, vertexes.C2.x], 'Y', [vertexes.B1.y, vertexes.C2.y]);

@@ -185,7 +185,7 @@ child_axis = axes('position', child_axis_pos, 'Selected', cursor_selected, 'Laye
 
 % Copy all graphic element of the parent axis to the child
 graphic_elements = copy(parent_axis.Children);
-for i = 1:length(graphic_elements)
+for i = length(graphic_elements):-1:1
    copyobj(graphic_elements(i), child_axis)
 end
 
